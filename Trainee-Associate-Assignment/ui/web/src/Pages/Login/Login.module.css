@@ -1,0 +1,139 @@
+.login_container {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease-in;
+  animation: meals-appear 1s ease-out forwards;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  width: 35%;
+  background-color: #ffffff;
+  border-radius: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ae0e36ff;
+}
+.login {
+  width: 100%;
+}
+
+.title {
+  font-family: roboto;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ae0e36ff;
+  margin-bottom: 2.5rem;
+}
+
+.form_container {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.inputs {
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+  color: #ae0e36ff;
+  font-size: 1.05rem;
+  width: 100%;
+  padding: 0.3rem 0rem;
+  outline: none;
+  border: 0;
+  border-bottom: 2.2px solid #ae0e36ff;
+  background: transparent;
+}
+.labels {
+  font-family: "open sans";
+  font-size: 1rem;
+  color: #ae0e36ff;
+  font-weight: 650;
+}
+.forgot {
+  float: right;
+  font-size: 0.9rem;
+  color: #ae0e36ff;
+}
+.forgot:hover {
+  color: rgb(243, 60, 60);
+}
+.btn {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding: 5.5px;
+  margin: 5% 0;
+  background: transparent;
+  border: 3px solid #ae0e36ff;
+  border-radius: 1rem;
+  color: #ae0e36ff;
+  font-family: roboto;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #d32e5eff;
+  color: #ffffff;
+}
+@media screen and (max-width: 950px) {
+  .img_container {
+    display: none;
+  }
+  .login {
+    border: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login_container {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+.errorShow {
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: rgba(255, 0, 0, 0.473);
+  padding: 0.6rem 0;
+  text-align: center;
+  color: #ddd;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in;
+  animation: fade 1s 1;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.inputs:focus .inputs:active {
+  background-color: transparent;
+}
+
+.icon {
+  width: 11rem;
+  height: 11rem;
+  margin-left: 37%;
+  color: #ae0e36ff;
+  margin-bottom: 2.5rem;
+  border: 5px solid #ae0e36ff;
+  border-radius: 6rem;
+  padding: 1.5rem;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
